@@ -37,6 +37,7 @@ Built for CodeStar 30 (Round 2 — The Build), by team MEGA SMASHERS (solo: Moha
 - No real authentication — roles are selected manually via a dropdown for demo purposes; Row Level Security is disabled on all tables for the MVP.
 - Single draft/version flow; no concurrent multi-user conflict handling yet.
 - Gemini free tier has a 5-requests-per-minute rate limit, which may cause brief delays under heavy testing.
+- Gemini free tier also has a 20-requests-per-day limit. If this is exhausted during judging, the AI review call will return a quota error; all other pages (Findings, Reviewer, Insights, Admin) continue to work normally using previously generated data, since they do not call the AI model.
 
 ## Planned for Round 3
 
